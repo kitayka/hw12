@@ -43,6 +43,7 @@ body {
 	text-align: center;
 	color: #ffff78;
 	margin-top: 70px;
+	margin-bottom: 0;
 }
 .ios_versions {
 	margin: 60px auto 0;
@@ -50,14 +51,15 @@ body {
 }
 .bio_list {
 	margin: 50px auto 0;
-	list-style-image: url(../images/list-style-image.png);
+	list-style-image: url(../images/0.75x.png);
 	color: #cfcfcf;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 400;
 	line-height: 24px;
 }
 .li_indent {
 	margin-bottom: 15px;
+	padding-left: 20px;
 }
 .li_indent:last-child {
 	margin-bottom: 0;
@@ -66,18 +68,20 @@ body {
 	position: relative;
 	margin-top: 65px;
 	width: 100%;
-	height: 225px;
+	height: 230px;
 	background-color: rgba(142, 145, 149, .9);
 }
 .right_button {
-	float: right;
+	right: 0;
 }
 .buttons_styles {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 	border: none;
 	background-color: transparent;
 	cursor: pointer; 
-	line-height: 225px;
-	margin: 0 20px 0;
+	margin: auto 20px 0;
 	padding: 0;
 }
 footer {
@@ -90,4 +94,10 @@ footer {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 30px;
+}
+
+
+.link_versions {
+	display: inline-block;
+	line-height: 0;
 }
