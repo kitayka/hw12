@@ -1,8 +1,11 @@
 body {
+	margin: 0;
+	background-color: #141b23;
+}
+.wrapper {
 	max-width: 1000px;
 	margin: 0 auto 0;
 	padding-top: 40px;
-	background-color: #141b23;
 }
 .clearfix::after {
 	content: '';
@@ -38,11 +41,13 @@ body {
 	font-weight: 400;
 	line-height: 24px;
 }
-
+.about_ios {
+	margin-top: 70px;
+}
 .h2_styles {
 	text-align: center;
 	color: #ffff78;
-	margin-top: 70px;
+	margin-top: 0;
 	margin-bottom: 0;
 }
 .ios_versions {
@@ -51,18 +56,30 @@ body {
 }
 .bio_list {
 	margin: 50px auto 0;
-	list-style-image: url(../images/0.75x.png);
 	color: #cfcfcf;
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 24px;
 }
 .li_indent {
+	list-style: none;
+	position: relative;
 	margin-bottom: 15px;
 	padding-left: 20px;
 }
+.li_indent::before {
+	content: '';
+	position: absolute;
+	background: url(../images/list-style-image.png) no-repeat;
+	width: 100%;
+	height: 100%;
+	left: -30px;
+}
 .li_indent:last-child {
 	margin-bottom: 0;
+}
+.slider {
+	margin-top: 70px;
 }
 .images-slider_box {
 	position: relative;
@@ -72,7 +89,10 @@ body {
 	background-color: rgba(142, 145, 149, .9);
 }
 .right_button {
-	right: 0;
+	right: 20px;
+}
+.left_button {
+	left: 20px;
 }
 .buttons_styles {
 	position: absolute;
@@ -81,10 +101,9 @@ body {
 	border: none;
 	background-color: transparent;
 	cursor: pointer; 
-	margin: auto 20px 0;
 	padding: 0;
 }
-footer {
+.footer {
 	margin-top: 190px;
 	margin-bottom: 25px;
 }
